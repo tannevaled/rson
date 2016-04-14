@@ -24,7 +24,10 @@ Serializer::RSON.load(buffer:buffer) # => { a: 1, 2 => true, 'c' => :d }
 ```
 ### Loading from a file
 ```ruby
-Serializer::RSON.load(file_name:'config.rson', file_path:'/etc/some_application')
+Serializer::RSON.load(
+  file_name:'config.rson',
+  file_path:'/etc/some_application'
+) # => { a: 1, 2 => true, 'c' => :d }
 ```
 
 ## Installation
