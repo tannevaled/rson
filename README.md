@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tannevaled/rson.svg?branch=master)](https://travis-ci.org/tannevaled/rson)
+
 Ruby Simple Object's Notation
 =============================
 
