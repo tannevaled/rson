@@ -6,3 +6,4 @@ rvm:
   - 2.3.0
 script:
   - rake unit:tests
+  - rake gem:build
