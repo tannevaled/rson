@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = File.basename(__FILE__, '.*')
-  gem.version = '0.0.0'
+  gem.version = '0.0.1'
   gem.authors = 'David DELAVENNAT'
   gem.email   = ''
   gem.summary = 'Ruby Simple Object\'s Notation'
