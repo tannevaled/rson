@@ -18,7 +18,7 @@ module Serializer
     #########################################################################
     module Class
       def load(params={})
-        buffer = params.fetch(:buffer)
+        buffer = params.fetch(:buffer,nil)
         if buffer.nil?
           file_path = params.fetch(:file_path)
           file_name = params.fetch(:file_name)
