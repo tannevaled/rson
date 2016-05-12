@@ -17,7 +17,12 @@ namespace 'gem' do
 
   desc 'Gem build'
   task :build do
-
+    require 'awesome_print'
+    require 'rubygems/commands/build_command'
+    build = Gem::Commands::BuildCommand.new
+    gemspec = [ File.basename(File.expand_path(__dir__)), 'gemspec' ].join('.')
+    build.options.store :args, [ gemspec ]
+    ap build.execute
   end
 
   desc 'Gem install'
