@@ -1,3 +1,7 @@
+require 'awesome_print'
+
+Rake::TaskManager.record_task_metadata = true
+
 namespace 'unit' do
 
   desc 'Unit tests'
@@ -31,7 +35,21 @@ namespace 'gem' do
   end
 
 end
+
+namespace 'task' do
+  desc 'List available task'
+  task :list do
+    app = Rake.application
+    app.tasks.each do |task|
+      ap task:task,
+         scope:task.scope,
+         desc:task.full_comment
+      puts "%-20s  # %s" % [task.name, task.full_comment]
+    end
+  end
+end
 desc 'List available tasks'
 task :default do
-  puts `rake -T -a`
+  #puts `rake -T -a`
+  Rake.application['task:list'].invoke
 end

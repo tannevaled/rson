@@ -12,5 +12,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'awesome_print', '~>1.6'
   gem.add_runtime_dependency 'classy_hash',   '~>0.1'
   gem.add_development_dependency 'test-unit', '~>3.1'
+  gem.files = Dir['lib/**/*']
   gem.require_paths = [ 'lib' ]
 end
