@@ -34,6 +34,10 @@ namespace 'gem' do
 
   end
 
+  desc 'Gem push'
+  task :push do
+    sh 'gem push rson-0.0.4.gem'
+  end
 end
 
 namespace 'task' do

@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = File.basename(__FILE__, '.*')
-  gem.version = '0.0.1'
+  gem.version = '0.0.5'
   gem.authors = 'David DELAVENNAT'
   gem.email   = ''
   gem.summary = 'Ruby Simple Object\'s Notation'
@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'awesome_print', '~>1.6'
   gem.add_runtime_dependency 'classy_hash',   '~>0.1'
   gem.add_development_dependency 'test-unit', '~>3.1'
-  gem.files = Dir['lib/**/*']
+  gem.files = Dir['lib/**/*'] + %w[
+    LICENCE README.md
+  ]
   gem.require_paths = [ 'lib' ]
 end
