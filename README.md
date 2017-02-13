@@ -2,7 +2,9 @@
 Ruby Simple Object's Notation
 =============================
 
-[![Build Status](https://travis-ci.org/tannevaled/rson.svg?branch=master)](https://travis-ci.org/tannevaled/rson) [![Gem Version](https://badge.fury.io/rb/rson.svg)](https://badge.fury.io/rb/rson)
+[![Build Status](https://travis-ci.org/tannevaled/rson.svg?branch=master)](https://travis-ci.org/tannevaled/rson)
+[![Gem Version](https://badge.fury.io/rb/rson.svg)](https://badge.fury.io/rb/rson)
+[![Code Climate](https://codeclimate.com/github/tannevaled/rson/badges/gpa.svg)](https://codeclimate.com/github/tannevaled/rson)
 
   RSON convert a string representation of Ruby simple objects to Ruby objects.
   It does not use eval() but the parser gem to really parse strings.
